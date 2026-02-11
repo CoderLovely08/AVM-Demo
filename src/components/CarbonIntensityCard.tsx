@@ -3,6 +3,7 @@ import CardLayout from '../layout/CardLayout'
 import CardTitle from './custom/CardTitle'
 import { airIcon } from '../data'
 import ReactECharts from 'echarts-for-react'
+import TimeStampLabel from './custom/TimeStampLabel'
 
 const CarbonIntensityCard = () => {
   const getOption = () => ({
@@ -76,9 +77,7 @@ const CarbonIntensityCard = () => {
     <CardLayout>
       <div className="flex items-center justify-between mb-8">
         <CardTitle icon={airIcon} label="Carbon Intensity" />
-        <span className="px-4 py-1.5 bg-[#1a3f3f] text-white text-sm rounded-full">
-          Current
-        </span>
+        <TimeStampLabel label='Current' />
       </div>
 
       <div className="relative h-72">

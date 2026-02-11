@@ -4,6 +4,7 @@ import CardLayout from '../layout/CardLayout'
 import CardTitle from './custom/CardTitle'
 import { flashIcon } from '../data'
 import { EllipsisVertical } from 'lucide-react'
+import TimeStampLabel from './custom/TimeStampLabel'
 
 const EnergyConsumptionCard = () => {
 
@@ -57,9 +58,7 @@ const EnergyConsumptionCard = () => {
       <div className="flex items-center justify-between mb-8">
         <CardTitle icon={flashIcon} label="Energy Consumption" />
         <div className="flex items-center gap-2">
-          <span className="px-4 py-1.5 bg-gray-200/10 text-white text-sm rounded-full">
-            Last 7 Day
-          </span>
+          <TimeStampLabel label='Last 7 Days' />
           <EllipsisVertical />
         </div>
       </div>

@@ -3,6 +3,7 @@ import ReactECharts from 'echarts-for-react'
 import CardLayout from '../layout/CardLayout'
 import CardTitle from './custom/CardTitle'
 import { usersIcon } from '../data'
+import TimeStampLabel from './custom/TimeStampLabel'
 
 const FootfallCard = () => {
 
@@ -102,12 +103,11 @@ const FootfallCard = () => {
     <CardLayout>
       <div className="flex items-center justify-between mb-8">
         <CardTitle icon={usersIcon} label="Footfall" />
-        <span className="px-4 py-1.5 bg-[#1a3f3f] text-white text-sm rounded-full">
-          Last 7 Day
-        </span>
+        <TimeStampLabel label='Last 7 Days' />
+
       </div>
 
-       <div className="h-64">
+      <div className="h-64">
         <ReactECharts option={getOption()} style={{ height: '100%', width: '100%' }} />
       </div>
     </CardLayout>
