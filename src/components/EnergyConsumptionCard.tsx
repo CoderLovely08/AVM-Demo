@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactECharts from 'echarts-for-react'
 import CardLayout from '../layout/CardLayout'
-import CardTitle from './custom/Cardtitle'
+import CardTitle from './custom/CardTitle'
 import { flashIcon } from '../data'
 import { EllipsisVertical } from 'lucide-react'
 
