@@ -25,6 +25,26 @@ const LightsCard = () => {
                         ],
                     },
                 },
+                progress: {
+                    show: true,
+                    roundCap: true,
+                    width: 12,
+                    itemStyle: {
+                        color: "#3FFDE0",
+                    },
+                },
+                pointer: {
+                    icon: "circle",
+                    length: "20%",
+                    width: 20,
+                    offsetCenter: [0, "-85%"],
+                    itemStyle: {
+                        color: "#3FFDE0",
+                        shadowBlur: 20,
+                        borderColor: "#fff",
+                        borderWidth: 2,
+                    },
+                },
                 splitLine: {
                     length: 0,
                     lineStyle: {
