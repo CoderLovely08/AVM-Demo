@@ -2,9 +2,43 @@ import React, { useState } from 'react'
 import CardLayout from '../layout/CardLayout'
 import CardTitle from './custom/Cardtitle'
 import { lightIcon } from '../data'
+import ReactECharts from 'echarts-for-react'
 
 const LightsCard = () => {
     const [isOn, setIsOn] = useState<boolean>(true)
+
+    const getOption = () => ({
+        series: [
+            {
+                type: "gauge",
+                startAngle: 200,
+                endAngle: -20,
+                min: 2700,
+                max: 5000,
+                splitNumber: 8,
+                splitLine: {
+                    length: 0,
+                    lineStyle: {
+                        color: "#3FFDE0",
+                        width: 2,
+                    },
+                    distance: -16,
+                },
+                axisLabel: {
+                    color: "#3FFDE0",
+                    fontSize: 14,
+                    distance: -20,
+                    formatter: function (value: number) {
+                        if (value === 2700 || value === 5000) {
+                            return value + "k";
+                        }
+                        return "";
+                    },
+                },
+                data: [{ value: 4300 }],
+            },
+        ],
+    });
 
     return (
         <CardLayout>
@@ -20,6 +54,13 @@ const LightsCard = () => {
                             }`}
                     />
                 </button>
+            </div>
+
+            <div className="h-72">
+                <ReactECharts
+                    option={getOption()}
+                    style={{ height: "100%", width: "100%" }}
+                />
             </div>
         </CardLayout>
     )
