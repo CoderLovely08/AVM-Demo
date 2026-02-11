@@ -2,6 +2,7 @@ import React from 'react'
 import CardLayout from '../layout/CardLayout'
 import CardTitle from './custom/Cardtitle'
 import { dropIcon, humidIcon } from '../data'
+import { MoveDown } from 'lucide-react'
 
 const WaterConsumptionCard = () => {
   return (
@@ -25,6 +26,7 @@ const WaterConsumptionCard = () => {
 
         <div className="relative">
           <div className="bg-primary/10 px-12 py-8 rounded-full">
+            <MoveDown size={16} />
             <span className="text-5xl font-semibold text-white">
               8.42m<sup className="text-3xl">3</sup>
             </span>
