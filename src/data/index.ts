@@ -1,6 +1,6 @@
-import logo from "/assets/ds-logo.svg";
+import logo from "../assets/ds-logo.svg";
 
-import homeIcon from "/assets/nav-icons/home.svg";
+import homeIcon from "../assets/nav-icons/home.svg";
 import pieIcon from "/assets/nav-icons/pie.svg";
 import tilesIcon from "/assets/nav-icons/tiles.svg";
 
@@ -13,14 +13,10 @@ import lightIcon from "/assets/light.png";
 import usersIcon from "/assets/users.png";
 
 export {
-  // Logos
   logo,
-  // Nav Icons
   homeIcon,
   pieIcon,
   tilesIcon,
-
-  // Card Icons
   airIcon,
   dotsIcon,
   dropIcon,
