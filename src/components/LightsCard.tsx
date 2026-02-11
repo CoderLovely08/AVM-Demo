@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import CardTitle from './custom/CardTitle'
 import CardLayout from '../layout/CardLayout'
-import CardTitle from './custom/Cardtitle'
 import { lightIcon } from '../data'
 import ReactECharts from 'echarts-for-react'
 

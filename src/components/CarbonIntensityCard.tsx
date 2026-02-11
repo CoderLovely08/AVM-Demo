@@ -1,6 +1,6 @@
 import React from 'react'
 import CardLayout from '../layout/CardLayout'
-import CardTitle from './custom/Cardtitle'
+import CardTitle from './custom/CardTitle'
 import { airIcon } from '../data'
 import ReactECharts from 'echarts-for-react'
 
