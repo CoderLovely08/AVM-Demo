@@ -3,9 +3,17 @@ import CardTitle from './custom/CardTitle'
 import CardLayout from '../layout/CardLayout'
 import { lightIcon } from '../data'
 import ReactECharts from 'echarts-for-react'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectLightsData, toggleLights } from '../store/slices/lights.slice'
 
 const LightsCard = () => {
-    const [isOn, setIsOn] = useState<boolean>(true)
+    const lightsData = useSelector(selectLightsData);
+    const dispatch = useDispatch();
+
+    const isOn = lightsData.lights.lightsOn;
+    const handleToggle = () => {
+        dispatch(toggleLights());
+    }
 
     const getOption = () => ({
         series: [
@@ -80,7 +88,10 @@ const LightsCard = () => {
                     color: "#3FFDE0",
                     formatter: "{value}k",
                 },
-                data: [{ value: 4300 }],
+                data: [{
+                    value:
+                        lightsData.lights.lightsData.intensity
+                }],
             },
         ],
     });
@@ -90,7 +101,7 @@ const LightsCard = () => {
             <div className="flex items-center justify-between mb-4">
                 <CardTitle icon={lightIcon} label="Lights" />
                 <button
-                    onClick={() => setIsOn(!isOn)}
+                    onClick={handleToggle}
                     className={`w-14 h-7 rounded-full transition-colors duration-300 relative ${isOn ? "bg-primary  " : "bg-gray-600"
                         }`}
                 >

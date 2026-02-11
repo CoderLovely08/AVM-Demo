@@ -55,6 +55,6 @@ Where exact parity was limited:
 * [x] TypeScript used
 * [x] Hosted on Vercel
 * [x]  Redux for State Management
-* [] Tests (planned)
+* [ ] Tests (planned)
 
 ---
