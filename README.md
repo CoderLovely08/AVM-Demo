@@ -1,16 +1,60 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Digispace
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend implementation of the DigiSpace dashboard design using **React + TypeScript + Apache ECharts**.
 
-## React Compiler
+Live Demo:
+👉 [https://avm-demo-lilac.vercel.app/](https://avm-demo-lilac.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Resolution Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The design is not responsive as per instructions.
+I built the layout based on:
+
+**Resolution: 1440 × 900** (Also responsive across multiple screen sizes)
+
+_*Note: May overlap at minor places_
+
+All spacing, font sizes, paddings, and alignments were tuned to match the provided design at this resolution.
+
+---
+
+## Tech Stack
+
+* React
+* TypeScript
+* Apache ECharts
+* Tailwind CSS
+* Vite
+* Vercel (deployment)
+
+---
+
+## Implementation Notes
+
+* Each card (Lights, Carbon Intensity, Water Consumption, etc.) is built as an **independent component**.
+* Gauge and pie charts are implemented using **Apache ECharts**.
+* Fonts and colors were taken from `colors_fonts.txt`.
+* All provided icons were used wherever available.
+* The layout structure allows cards to be dynamically added or removed (adaptive layout behavior supported).
+* The design aims to be as pixel-perfect as possible based on the provided `Frontend-Test.jpg`.
+
+Where exact parity was limited:
+
+* Some micro-typography differences may occur due to rendering differences between browser engines and the original design source.
+* ECharts label rendering has minor layout constraints compared to static design tools.
+* Minor placement issues could be there as well for chart labels.
+
+---
+
+## Status
+
+* [x] TypeScript used
+* [x] Hosted on Vercel
+* [x]  Redux for State Management
+* [] Tests (planned)
+
+---

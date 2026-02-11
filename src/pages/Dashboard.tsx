@@ -11,21 +11,11 @@ const Dashboard = () => {
     <BaseLayout>
       <div className="flex-1">
         <main className="px-8 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:grid-cols-1 gap-6">
-          <div>
-            <LightsCard />
-          </div>
-          <div>
-            <WaterConsumptionCard />
-          </div>
-          <div>
-            <CarbonIntensityCard />
-          </div>
-          <div>
-            <EnergyConsumptionCard />
-          </div>
-          <div>
-            <FootfallCard />
-          </div>
+          <LightsCard />
+          <WaterConsumptionCard />
+          <CarbonIntensityCard />
+          <EnergyConsumptionCard />
+          <FootfallCard />
         </main>
       </div>
     </BaseLayout>
