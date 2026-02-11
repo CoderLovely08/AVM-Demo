@@ -25,8 +25,8 @@ const WaterConsumptionCard = () => {
         />
 
         <div className="relative">
-          <div className="bg-primary/10 px-12 py-8 rounded-full">
-            <span className="text-5xl font-semibold text-white">
+          <div className="bg-primary/10 px-10 py-6 rounded-full">
+            <span className="text-5xl font-normal text-white">
               8.42m<sup className="text-3xl">3</sup>
             </span>
           </div>

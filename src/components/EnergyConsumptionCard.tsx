@@ -58,7 +58,7 @@ const EnergyConsumptionCard = () => {
         <CardTitle icon={flashIcon} label="Energy Consumption" />
         <div className="flex items-center gap-2">
           <span className="px-4 py-1.5 bg-gray-200/10 text-white text-sm rounded-full">
-            Yesterday
+            Last 7 Day
           </span>
           <EllipsisVertical />
         </div>

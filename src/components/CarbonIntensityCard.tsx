@@ -16,24 +16,24 @@ const CarbonIntensityCard = () => {
     series: [
       {
         type: "pie",
-        radius: ["65%", "85%"],
+        radius: ["95%", "55%"],
         center: ["50%", "50%"],
         avoidLabelOverlap: false,
         itemStyle: {
           borderRadius: 0,
           borderColor: "#0f2f2f",
-          borderWidth: 3,
+          borderWidth: 0,
         },
         label: {
           show: true,
-          // position: "outer",
+          position: "inside",
           alignTo: "edge",
           formatter: function (params: any) {
-            return `{percent|${params.value}%}\n{name|${params.name}}`;
+            return `{pill|${params.value}% ${params.name}}`;
           },
           rich: {
-            percent: {
-              fontSize: 14,
+            pill: {
+              fontSize: 12,
               fontWeight: "bold",
               color: "#000",
               backgroundColor: "#fff",
@@ -41,11 +41,11 @@ const CarbonIntensityCard = () => {
               borderRadius: 12,
               align: "center",
             },
-            name: {
-              fontSize: 11,
-              color: "#fff",
-              padding: [4, 0, 0, 0],
-            },
+            // name: {
+            //   fontSize: 11,
+            //   color: "#fff",
+            //   padding: [4, 0, 0, 0],
+            // },
           },
           distanceToLabelLine: 5,
         },
@@ -77,7 +77,7 @@ const CarbonIntensityCard = () => {
       <div className="flex items-center justify-between mb-8">
         <CardTitle icon={airIcon} label="Carbon Intensity" />
         <span className="px-4 py-1.5 bg-[#1a3f3f] text-white text-sm rounded-full">
-          Yesterday
+          Current
         </span>
       </div>
 
@@ -86,9 +86,9 @@ const CarbonIntensityCard = () => {
           option={getOption()}
           style={{ height: "100%", width: "100%" }}
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
-          <div className="text-3xl font-semibold text-white">95gm</div>
-          <div className="text-sm text-gray-400">CO2/kWh</div>
+        <div className="absolute space-x-2 bg-secondary px-4 py-2 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/3 text-center pointer-events-none">
+          <span className="text-2xl font-semibold text-background">95gm</span>
+          <span className="text-sm text-gray-600">CO2/kWh</span>
         </div>
       </div>
     </CardLayout>

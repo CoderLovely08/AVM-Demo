@@ -62,7 +62,7 @@ const LightsCard = () => {
                     distance: -16,
                 },
                 axisLabel: {
-                    color: "#3FFDE0",
+                    color: "#E6EAF5",
                     fontSize: 14,
                     distance: -20,
                     formatter: function (value: number) {
@@ -71,11 +71,12 @@ const LightsCard = () => {
                         }
                         return "";
                     },
+                    padding: [14, 2, 0, 2]
                 },
                 detail: {
                     fontSize: 36,
                     fontWeight: 600,
-                    offsetCenter: [0, "10%"],
+                    offsetCenter: [0, "-5%"],
                     color: "#3FFDE0",
                     formatter: "{value}k",
                 },

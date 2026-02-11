@@ -103,7 +103,7 @@ const FootfallCard = () => {
       <div className="flex items-center justify-between mb-8">
         <CardTitle icon={usersIcon} label="Footfall" />
         <span className="px-4 py-1.5 bg-[#1a3f3f] text-white text-sm rounded-full">
-          Yesterday
+          Last 7 Day
         </span>
       </div>
 
