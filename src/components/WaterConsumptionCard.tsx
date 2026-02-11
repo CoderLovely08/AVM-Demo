@@ -26,7 +26,6 @@ const WaterConsumptionCard = () => {
 
         <div className="relative">
           <div className="bg-primary/10 px-12 py-8 rounded-full">
-            <MoveDown size={16} />
             <span className="text-5xl font-semibold text-white">
               8.42m<sup className="text-3xl">3</sup>
             </span>
@@ -34,6 +33,7 @@ const WaterConsumptionCard = () => {
         </div>
 
         <div className="flex items-center gap-2 text-primary bg-primary/20 px-4 py-2 rounded-full text-sm">
+          <MoveDown size={16} />
           <span>
             <span className="font-semibold">1.2m³</span> less water used compare
             to last tuesday
