@@ -1,8 +1,11 @@
 import React from 'react'
+import CardLayout from '../layout/CardLayout'
 
 const LightsCard = () => {
   return (
-    <div>LightsCard</div>
+    <CardLayout>
+        <div>LightsCard</div>
+    </CardLayout>
   )
 }
 

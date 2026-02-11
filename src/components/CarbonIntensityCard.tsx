@@ -1,8 +1,11 @@
 import React from 'react'
+import CardLayout from '../layout/CardLayout'
 
 const CarbonIntensityCard = () => {
   return (
-    <div>CarbonIntensityCard</div>
+    <CardLayout>
+      <div>CarbonIntensityCard</div>
+    </CardLayout>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import CardLayout from '../layout/CardLayout'
 
 const FootfallCard = () => {
   return (
-    <div>FootfallCard</div>
+    <CardLayout>
+      <div>FootfallCard</div>
+    </CardLayout>
   )
 }
 

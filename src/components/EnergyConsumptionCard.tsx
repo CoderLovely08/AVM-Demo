@@ -1,8 +1,11 @@
 import React from 'react'
+import CardLayout from '../layout/CardLayout'
 
 const EnergyConsumptionCard = () => {
   return (
-    <div>EnergyConsumptionCard</div>
+    <CardLayout>
+      <div>EnergyConsumptionCard</div>
+    </CardLayout>
   )
 }
 
