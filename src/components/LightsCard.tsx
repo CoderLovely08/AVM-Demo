@@ -45,6 +45,14 @@ const LightsCard = () => {
                         borderWidth: 2,
                     },
                 },
+                axisTick: {
+                    length: 8,
+                    lineStyle: {
+                        color: "#3FFDE0",
+                        width: 1,
+                    },
+                    distance: -25,
+                },
                 splitLine: {
                     length: 0,
                     lineStyle: {
@@ -63,6 +71,13 @@ const LightsCard = () => {
                         }
                         return "";
                     },
+                },
+                detail: {
+                    fontSize: 36,
+                    fontWeight: 600,
+                    offsetCenter: [0, "10%"],
+                    color: "#3FFDE0",
+                    formatter: "{value}k",
                 },
                 data: [{ value: 4300 }],
             },
