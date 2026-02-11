@@ -38,10 +38,10 @@ const EnergyConsumptionCard = () => {
       {
         data: Array.from({ length: 7 }, () => Math.floor(Math.random() * 100) + 20),
         type: "bar",
-        barWidth: "80%",
+        barWidth: "75%",
         itemStyle: {
           color: "#3FFDE0",
-          borderRadius: [8, 8, 0, 0],
+          borderRadius: [4, 4, 4, 4],
         },
         emphasis: {
           itemStyle: {
