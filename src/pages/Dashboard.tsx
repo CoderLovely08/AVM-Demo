@@ -3,7 +3,9 @@ import BaseLayout from '../layout/BaseLayout'
 
 const Dashboard = () => {
   return (
-    <BaseLayout />
+    <BaseLayout>
+      Main Dashboard
+    </BaseLayout>
   )
 }
 
