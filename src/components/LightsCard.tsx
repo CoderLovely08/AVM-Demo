@@ -97,7 +97,7 @@ const LightsCard = () => {
     });
 
     return (
-        <CardLayout>
+        <CardLayout isGradient>
             <div className="flex items-center justify-between mb-4">
                 <CardTitle icon={lightIcon} label="Lights" />
                 <button
