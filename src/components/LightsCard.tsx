@@ -16,6 +16,15 @@ const LightsCard = () => {
                 min: 2700,
                 max: 5000,
                 splitNumber: 8,
+                axisLine: {
+                    roundCap: true,
+                    lineStyle: {
+                        width: 10,
+                        color: [
+                            [1, "#E6EAF5"],
+                        ],
+                    },
+                },
                 splitLine: {
                     length: 0,
                     lineStyle: {
