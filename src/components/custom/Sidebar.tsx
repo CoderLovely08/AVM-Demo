@@ -4,7 +4,10 @@ import { homeIcon, pieIcon, tilesIcon } from '../../data';
 
 const Sidebar = () => {
   return (
-    <div className="fixed left-0 top-0 h-full w-24 bg-background flex flex-col items-center py-8 gap-8">
+    <div className="flex-1 bg-linear-to-b
+        from-secondary/5
+        via-black
+        to-primary/20 w-24 bg-background flex flex-col items-center py-8 gap-8 rounded-lg">
       <div className="flex flex-col items-center justify-center h-full gap-8 mt-20">
         <button className="flex flex-col items-center gap-2 opacity-100 hover:opacity-80 transition-opacity">
           <img src={homeIcon} alt="Home" className="w-6 h-6" />

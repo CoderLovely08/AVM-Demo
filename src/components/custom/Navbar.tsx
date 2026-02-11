@@ -1,3 +1,4 @@
+import { UserIcon } from "lucide-react";
 import { logo, usersIcon } from "../../data";
 
 const Navbar = () => {
@@ -10,11 +11,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4">
         <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
-          <img
-            src={usersIcon}
-            alt="User"
-            className="w-full h-full object-cover"
-          />
+          <UserIcon className="w-full h-full text-primary p-2" />
         </div>
       </div>
     </div>
